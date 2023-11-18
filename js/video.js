@@ -1,8 +1,8 @@
 var video;
 
 function updateVolumnInfo() {
-	var volumeDisplay = document.getElementById('volume');
-	volumeDisplay.textContent = (video.volume * 100).toFixed(0) + '%';
+	// var volumeDisplay = document.getElementById('volume');
+	document.querySelector("#volume").innerHTML = Math.round(video.volume * 100) + "%";
 }
 
 window.addEventListener("load", function () {
